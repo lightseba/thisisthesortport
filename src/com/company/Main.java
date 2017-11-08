@@ -12,9 +12,9 @@ public class Main {
 
 
         for(int i = 0; i < trials; i++){
-            insertionSort += InsertSort.sort();
+            //insertionSort += InsertSort.sort();
             selectionSort += Selectamundo.sort();
-            bubbleSort += MichaelBubleSort.sort();
+            //bubbleSort += MichaelBubleSort.sort();
         }
 
         System.out.print("Insertion: ");

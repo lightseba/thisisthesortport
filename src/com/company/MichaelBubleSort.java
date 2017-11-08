@@ -16,7 +16,7 @@ public class MichaelBubleSort {
             numbers[i] = (int) (Math.random() * mult);
         }
 
-        System.out.println(Arrays.toString(numbers));
+        //System.out.println(Arrays.toString(numbers));
 
         for (int i = size - 1; i >= 0; i--) {
             for (int j = 0; j < i; j++) {

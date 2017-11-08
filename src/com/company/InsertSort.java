@@ -17,7 +17,18 @@ public class InsertSort {
 
         System.out.println(Arrays.toString(a));
 
-        for(int i = 0; i < size; i++){ //i is the index to be sorted
+        for(int i = 1; i < size; i++){ //i is the index to be sorted
+
+            int j = i-1;
+            int key = a[i];
+
+            while (j >= 0 && a[j] > key)
+            {
+                a[j+1] = a[j];
+                j--;
+            }
+            a[j+1] = key;
+            /*
             for(int j = i-1; j >= 0; j--){//j moves in front of i to see where to place i
                 if(a[j] <= a[i]){ //if i fits into the list at this point, place it here and move everything else down
                     int temp = a[i];
@@ -40,7 +51,8 @@ public class InsertSort {
                     //System.out.println("end");
                 }
             }
-            System.out.println(Arrays.toString(a));
+            //System.out.println(Arrays.toString(a));
+            */
         }
         System.out.println(Arrays.toString(a));
 

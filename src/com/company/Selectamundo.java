@@ -7,8 +7,8 @@ public class Selectamundo {
     public static long sort() {
 
         long time = System.currentTimeMillis();
-        int size = 1000;
-        int mult = 1000;
+        int size = 10;
+        int mult = 10;
 
         int[] numbers = new int[size];
 
@@ -29,7 +29,7 @@ public class Selectamundo {
             numbers[i] = numbers[pos];
             numbers[pos] = temp;
 
-            System.out.println(Arrays.toString(numbers));
+            //System.out.println(Arrays.toString(numbers));
         }
 
         System.out.println(Arrays.toString(numbers));
